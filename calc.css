@@ -1,0 +1,121 @@
+.outer-box {
+    border: none;
+    height: 485px;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 20px;
+    background: #0f0c29; 
+    background: -webkit-linear-gradient(to right, #24243e, #29245c, #0f0c29);  
+    background: linear-gradient(to right, #24243e, #29245c, #0f0c29); 
+ }
+
+@font-face {
+    font-family: Digital7Mono-B1g5 ;
+    src: url("C:/Users/Chandresh/Downloads/Digital7Mono-B1g5.ttf");
+}
+.my-display{
+    font-family:Digital7Mono-B1g5 ;
+    font-size: 25.4px;
+    max-width: 240px;
+    text-align:right;
+    margin-left: -10px;
+    border-top: none;
+}
+.my-sub-display{
+    font-family:Digital7Mono-B1g5 ;
+    font-size: 15px;
+    max-width: 240px;
+    text-align:right;
+    margin-left: -10px;
+    border-bottom: none;
+    color: grey;
+    padding-left: 96px;
+   
+}
+.display-box{
+    padding: 40px;
+}
+.button-key{
+    padding-left: 30px;
+    padding-top: 0%;
+}
+button {
+    outline: none;
+    border: none;
+}
+.button-circle-bottom {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 20px;
+   margin-top: 10px;
+    margin-left: 5px;
+    background: rgb(6, 11, 62);
+    transition: 0.5s ease-in-out;
+}
+.btn-css{
+    float: right;
+    margin-top: 5px;
+    margin-right: -10px;
+    padding: 5px 5px;
+    border:none;
+    width: 50px;
+    border-radius: 25%;
+    background-color: rgb(255, 170, 0);
+    transition: 0.5s ease-in-out;
+   
+}
+.btn-css:hover{
+    transform: scale(1.03);
+}
+.button-circle-bottom:hover {
+    color: white;
+    border: 3px solid white;
+}
+.btn-history{
+    margin-top: -20px;
+    background: transparent;
+    color:rgb(255, 170, 0);
+}
+
+.history
+{
+    color: white;
+    padding-left: 20px;
+    background: #0f0c29; 
+    background: -webkit-linear-gradient(to right, #24243e, #29245c, #0f0c29);  
+    background: linear-gradient(to right, #24243e, #29245c, #0f0c29); 
+    width: 290px;
+    height: 310px;
+    margin: auto;
+    display: none;
+    border-radius: 25px;
+    margin-top: -290px;
+   position: relative;
+    animation-name: div;
+    animation-duration: 2s;
+}
+ @keyframes div {
+    0%  { left:0px; top:100px;}
+    100% { left:0px; top:0px;}
+}
+#history{
+    border:none;
+    text-align: right;
+}
+.clearhistory{
+    width: 100%;
+    color: white;
+    background: transparent; 
+}
+#myText:focus
+{
+    outline: none;
+}
+#subtext:focus
+{
+    outline: none;
+}
+

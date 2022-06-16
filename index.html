@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/b6c4041cf2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="calc.css">
+    <link href="C:/Users/Full Stack Development/Bootstrap/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="C:/Users/Full Stack Development/Bootstrap/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="display-box">
+           <button class="button btn-css btn-history " onclick="history()"><i style="font-size:24px" class="fa">&#xf1da</i></button>
+           <input type="text" class="my-sub-display" id="subtext" readonly>
+           <input type="text" class="my-display" id="myText" value="0" placeholder="0" readonly>
+           <button class="button btn-css " onclick="cleardisplay(null)"><i class="fa-solid fa-c"></i></button>
+        </div>
+        <div class="button-key" >
+            <button class="button button-circle-bottom" onclick="putvalue('7')"><i class="fa-solid fa-7"></i></button>
+            <button class="button button-circle-bottom" onclick="putvalue('8')"><i class="fa-solid fa-8"></i></button>
+            <button class="button button-circle-bottom" onclick="putvalue('9')"><i class="fa-solid fa-9"></i></button>
+            <button class="button button-circle-bottom" style="color:rgb(255, 170, 0) ;" onclick="putvalue('*')"><i class="bi bi-x-lg"></i></button><br>
+            <button class="button button-circle-bottom" onclick="putvalue('4')"><i class="fa-solid fa-4"></i></button>
+            <button class="button button-circle-bottom" onclick="putvalue('5')"><i class="fa-solid fa-5"></i></button>
+            <button class="button button-circle-bottom" onclick="putvalue('6')"><i class="fa-solid fa-6"></i></button>
+            <button class="button button-circle-bottom" style="color:rgb(255, 170, 0) ;"  onclick="putvalue('-')"><i class="bi bi-dash"></i></button><br>
+            <button class="button button-circle-bottom"  onclick="putvalue('1')"><i class="fa-solid fa-1"></i></button>
+            <button class="button button-circle-bottom"  onclick="putvalue('2')"><i class="fa-solid fa-2"></i></button>
+            <button class="button button-circle-bottom"  onclick="putvalue('3')"><i class="fa-solid fa-3"></i></button>
+            <button class="button button-circle-bottom" style="color:rgb(255, 170, 0) ;"  onclick="putvalue('+')"><i class="bi bi-plus"></i></button><br>
+            <button class="button button-circle-bottom" onclick="putvalue('.')">.</button>
+            <button class="button button-circle-bottom" onclick="putvalue('0')"><i class="fa-solid fa-0"></i></button>
+            <button class="button button-circle-bottom" onclick="equals()"><i class="fa-regular fa-equals"></i></button>
+            <button class="button button-circle-bottom" style="color:rgb(255, 170, 0) ;" onclick="putvalue('/')"><i class="fa-solid fa-divide"></i></button><br>
+        </div>
+        <div class="history" id="moving">
+            <h3>History</h3>
+            <div id="history">
+    
+            </div>
+            <button class="clearhistory" onclick="clearhis()"><i class="bi bi-trash3-fill"></i></button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
