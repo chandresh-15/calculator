@@ -47,3 +47,20 @@ function clearhis(){
     eq= [];
     answer=[];
 }
+
+//deleting last digit from the input
+function lastnumdel(){
+    if(docvalue.value != "")
+    {
+        if(docvalue.value.length>1){
+                docvalue.value = docvalue.value.slice(0,-1);
+        }
+        else{
+            docvalue.value = docvalue.value.slice(0,-1);
+            docvalue.value = "0";
+        }
+    }
+    else{
+        docvalue.value="0";
+    }
+}

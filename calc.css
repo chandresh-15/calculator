@@ -86,11 +86,13 @@ button {
     padding-left: 20px;
     background: #0f0c29; 
     background: -webkit-linear-gradient(to right, #24243e, #29245c, #0f0c29);  
-    background: linear-gradient(to right, #24243e, #29245c, #0f0c29); 
+    background: linear-gradient(to right, #24243e, #29245c, #0f0c29);
+    border: 1px solid rgb(255, 170, 0); 
     width: 290px;
     height: 310px;
     margin: auto;
     display: none;
+    overflow: auto;
     border-radius: 25px;
     margin-top: -290px;
    position: relative;
@@ -104,6 +106,8 @@ button {
 #history{
     border:none;
     text-align: right;
+    border: 1px solid rgb(255, 170, 0);
+    margin-right: 12px;
 }
 .clearhistory{
     width: 100%;
