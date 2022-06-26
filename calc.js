@@ -37,12 +37,13 @@ function history(){
     var history="<div>";
     for(let i=0;i<eq.length;i++)
     {
-        history+="<div class='his'><p>"+eq[i]+"</p><p>"+answer[i]+"</p></div>";
+        history+="<div class='his'><button class='backto')><i  id='"+i+"' class='bi bi-caret-left-square-fill'></i></button><p>"+eq[i]+"</p><p>"+answer[i]+"</p></div>";
     }
     history+="</div>";
     document.querySelector("#history").innerHTML=history;
 }
 function clearhis(){
+    alert("Are you sure you want to delete history ?");
     document.querySelector("#history").innerHTML = " ";
     eq= [];
     answer=[];
@@ -64,3 +65,10 @@ function lastnumdel(){
         docvalue.value="0";
     }
 }
+document.querySelector("#history").addEventListener('click',function(e)
+{   
+    if(e.target.id){
+        questioninput.value = eq[e.target.id];
+        docvalue.value = answer[e.target.id];
+    }
+})

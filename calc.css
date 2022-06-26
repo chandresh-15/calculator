@@ -105,7 +105,6 @@ button {
     100% { left:0px; top:0px;}
 }
 #history{
-    border:none;
     text-align: right;
     border: 1px solid rgb(255, 170, 0);
     margin-right: 12px;
@@ -122,5 +121,16 @@ button {
 #subtext:focus
 {
     outline: none;
+}
+
+.backto{
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+    background: transparent;
+    color: rgb(255, 170, 0) !important;
+    border-radius: 50%;
+    width: 40px;
+    justify-content: center;
 }
 
